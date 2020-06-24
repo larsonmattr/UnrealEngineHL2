@@ -1,0 +1,71 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Mixed Reality UX Tools",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "Microsoft",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "4.25.0",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"Installed": true,
+	"SupportedTargetPlatforms": [
+		"HoloLens"
+	],
+	"Modules": [
+		{
+			"Name": "UXTools",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"HoloLens"
+			]
+		},
+		{
+			"Name": "UXToolsWMR",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"HoloLens"
+			]
+		},
+		{
+			"Name": "UXToolsRuntimeSettings",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit",
+			"WhitelistPlatforms": [
+				"HoloLens"
+			]
+		},
+		{
+			"Name": "UXToolsEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "UXToolsInputSimulation",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "WindowsMixedReality",
+			"Enabled": true,
+			"WhitelistPlatforms": [
+				"HoloLens"
+			]
+		}
+	]
+}
